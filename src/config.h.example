@@ -1,0 +1,19 @@
+#pragma once
+
+// Wi-Fi
+#define WIFI_SSID "YOUR_SSID"                // nome da rede Wi-Fi
+#define WIFI_PASSWORD "YOUR_PASSWORD" // senha da rede Wi-Fi
+
+// ThingsBoard MQTT
+#define TB_HOST "mqtt.thingsboard.cloud" // ou IP da instância self-hosted
+#define TB_PORT 1883
+#define TB_TOKEN "mteqhxzfudib3yfnlvnq" // gerado no ThingsBoard
+
+// Calibração pH (meça com suas soluções)
+#define PH_V7 2.2820f // tensão após divisor para pH 7
+#define PH_V9 2.1753f // tensão após divisor para pH 9 (ou o seu valor ácido)
+#define PH_PHn 9.0f   // pH da segunda solução usada
+
+// Coleta
+#define SAMPLE_INTERVAL_MS 500     // intervalo entre amostras (ms)
+#define COLLECTION_PERIOD_MS 60000 // 1 minuto de coleta
